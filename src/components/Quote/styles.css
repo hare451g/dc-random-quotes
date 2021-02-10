@@ -1,0 +1,10 @@
+.quote-content {
+  border-left: solid 4px #f7df94;
+  padding-left: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.quote-empty {
+  font-family: 'Raleway', sans-serif;
+}
