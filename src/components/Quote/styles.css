@@ -1,0 +1,9 @@
+.quote-content {
+  border-left: solid 4px #f7df94;
+  padding-left: 24px;
+  font-family: sans-serif;
+}
+
+.quote-empty {
+  font-family: monospace;
+}
