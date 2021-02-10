@@ -4,7 +4,7 @@ import constants from '../constants';
 import Quote from '..';
 
 describe('Quote component test cases', () => {
-  it(`Should render ${constants.messages.IS_EMPTY} when quote is null or undefined`, () => {
+  it(`Should render empty quote message when quote is null or undefined`, () => {
     render(<Quote />);
 
     const content = screen.queryByTestId('content');
@@ -16,7 +16,7 @@ describe('Quote component test cases', () => {
     expect(screen.queryByTestId('loading-indicator')).toBeNull();
   });
 
-  it(`Should render ${constants.messages.IS_LOADING} when loading quote`, () => {
+  it(`Should render loading messages when loading quote`, () => {
     render(<Quote loading />);
     expect(screen.queryByTestId('content')).toBeNull();
     expect(screen.getByTestId('loading-indicator')).toHaveTextContent(
