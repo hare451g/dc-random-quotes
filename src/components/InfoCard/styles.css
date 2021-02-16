@@ -1,0 +1,29 @@
+.box-container {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px;
+}
+
+.author {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.genre {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+
+.right-arrow {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+}
