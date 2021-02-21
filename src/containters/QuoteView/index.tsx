@@ -1,3 +1,4 @@
+import { RouteComponentProps } from '@reach/router';
 import { useEffect, useReducer } from 'react';
 
 // components
@@ -10,7 +11,7 @@ import reducer, { initialState } from './reducer';
 import service from './service';
 import './styles.css';
 
-function QuoteView() {
+const QuoteView: React.FC<RouteComponentProps> = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
@@ -39,6 +40,6 @@ function QuoteView() {
       </main>
     </div>
   );
-}
+};
 
 export default QuoteView;
