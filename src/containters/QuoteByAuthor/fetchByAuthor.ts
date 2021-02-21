@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { IQuote, IQuoteRequestParams, IQuoteResponse } from './interfaces';
+import { IQuote, IQuoteRequestParams, IQuoteResponse } from '../../common/types';
 
 type fetchByAuthorType = (
   author?: IQuoteRequestParams['author']

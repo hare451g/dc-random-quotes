@@ -1,0 +1,22 @@
+.quote-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.quote-screen__top {
+  padding: 16px 32px;
+}
+
+.quote-screen__main {
+  max-width: 614px;
+  margin: auto;
+}
+
+.quote-screen__quote {
+  margin-bottom: 16px;
+}
+
+.quote-screen__infocard {
+  padding-left: 116px;
+}

@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Quote from './components/Quote';
+
+// Containers
+import App from './containters/App';
 
 // Utils
 import reportWebVitals from './reportWebVitals';
 
+// Styles
+import './styles.css';
+
 // App render
 ReactDOM.render(
   <React.StrictMode>
-    <Quote text="lorem ipsum dolor" />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
