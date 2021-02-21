@@ -1,10 +1,14 @@
-.quote-content {
+.quote__blockquote {
   border-left: solid 4px #f7df94;
-  padding-left: 24px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  padding-left: 100px;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-.quote-empty {
-  font-family: 'Raleway', sans-serif;
+.quote {
+  width: 614px;
+}
+
+.quote--loading {
+  
 }

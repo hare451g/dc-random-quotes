@@ -7,19 +7,25 @@ type propTypes = {
 };
 
 const Quote: React.FC<propTypes> = ({ text = null, loading = false }) => {
-  if (loading) {
-    return (
-      <p data-testid="loading-indicator">{constants.messages.IS_LOADING}</p>
-    );
-  }
+  const containerQuoteName = loading ? 'quote--loading' : 'quote';
 
-  const contentClassName = !text ? 'quote-empty' : 'quote-content';
-  const contentText = text || constants.messages.IS_EMPTY;
+  const blockQuoteClassName = text
+    ? 'quote__blockquote'
+    : 'quote__blockquote--empty';
+
+  const textContent = loading
+    ? constants.messages.IS_LOADING
+    : text || constants.messages.IS_EMPTY;
 
   return (
-    <blockquote className={contentClassName} data-testid="content">
-      "{contentText}"
-    </blockquote>
+    <div className={containerQuoteName} data-testid="quote-container">
+      <blockquote
+        className={blockQuoteClassName}
+        data-testid="quote__blockquote"
+      >
+        {textContent}
+      </blockquote>
+    </div>
   );
 };
 
