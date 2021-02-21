@@ -22,21 +22,25 @@ const InfoCard: React.FC<propTypes> = ({
 
   return (
     <div
-      className="box-container"
+      className="infocard"
       data-testid="infocard-container"
       onClick={onContainerClick}
       role="button"
     >
-      <div>
-        <div className="author" data-testid="infocard-author">
+      <div className="infocard__left-section">
+        <div className="infocard__author" data-testid="infocard-author">
           {author || constants.messages.AUTHOR_IS_NULL}
         </div>
-        <div className="genre" data-testid="infocard-genre">
+        <div className="infocard__genre" data-testid="infocard-genre">
           {genre || constants.messages.GENRE_IS_NULL}
         </div>
       </div>
 
-      <div className="right-arrow">&#8594;</div>
+      <div className="infocard__right-section">
+        <span className="infocard__goto-icon" data-testid="infocard-icon">
+          &#8594;
+        </span>
+      </div>
     </div>
   );
 };
