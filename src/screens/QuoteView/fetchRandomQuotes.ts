@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { IQuote, IQuoteResponse } from './interfaces';
+import { IQuote, IQuoteResponse } from '../../common/types';
 
 type fetchRandomQuotesType = () => Promise<IQuote | Error>;
 
